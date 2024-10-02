@@ -150,7 +150,7 @@ function get_data_from_inputs() {
 }
   
 function set_rgb_color() {
-    output_color_rgb.style.backgroundColor = rgb.r + ',' + rgb.g + ',' + rgb.b;
+    output_color_rgb.style.backgroundColor = `rgb(${Math.round(rgb.r)}, ${Math.round(rgb.g)}, ${Math.round(rgb.b)})`;
 }
   
 /* ========== Check input values ========== */
